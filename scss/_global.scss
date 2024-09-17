@@ -1,0 +1,11 @@
+body {
+    font-family: $font-family-base;
+    color: $color-dark;
+}
+
+a,
+button,
+input,
+textarea {
+    transition-duration: $transition-duration;
+}

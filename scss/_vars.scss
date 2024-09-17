@@ -1,0 +1,35 @@
+:root {
+    --container-width: 940px;
+    --container-padding-x: 15px;
+    
+    --color-light: #fff;
+    --color-dark: #333;
+    --color-dar-alt: #000;
+    --color-gray: #939596;
+    --color-green: #3E5C50;
+    --color-blue: #DDE7ED;
+    --color-blue-dark: #A1BFD4;
+
+    --font-family-base: "Roboto", sans-serif;
+    --font-family-secondary: "Roboto Condenced", sans-serif;
+    --font-family-accent: "Roboto Slab", sans-serif;
+
+    --transition-duration: 0.3s;
+}
+
+$container-width: var(--container-width);
+$container-padding-x: var(--container-padding-x);
+
+$color-light: var(--color-light);
+$color-dark: var(--color-dark);
+$color-dark-alt: var(--color-dar-alt);
+$color-gray: var(--color-gray);
+$color-green: var(--color-green);
+$color-blue: var(--color-blue);
+$color-blue-dark: var(--color-blue-dark);
+
+$font-family-base: var(--font-family-base);
+$font-family-secondary: var(--font-family-secondary);
+$font-family-accent: var(--font-family-accent);
+
+$transition-duration: var(--transition-duration)

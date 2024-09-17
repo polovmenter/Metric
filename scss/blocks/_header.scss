@@ -1,0 +1,14 @@
+.header {
+    padding-block: 26px;
+
+    @include mobile {
+        padding-block: 16px;
+    }
+    
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 40px;
+    }
+}
