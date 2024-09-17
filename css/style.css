@@ -107,7 +107,7 @@ textarea {
 }
 
 .burger-button {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -116,6 +116,11 @@ textarea {
   padding: 10px;
   box-sizing: content-box;
   background-color: transparent;
+}
+@media (max-width: 768px) {
+  .burger-button {
+    display: flex;
+  }
 }
 .burger-button span {
   width: 100%;

@@ -1,5 +1,5 @@
 .burger-button {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -8,6 +8,10 @@
     padding: 10px;
     box-sizing: content-box;
     background-color: transparent;
+
+    @include mobile {
+        display: flex;
+    }
 
     & span {
         width: 100%;
