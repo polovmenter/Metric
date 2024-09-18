@@ -1,6 +1,8 @@
 :root {
     --container-width: 940px;
     --container-padding-x: 15px;
+
+    --section-padding: 70px;
     
     --color-light: #fff;
     --color-dark: #333;
@@ -15,10 +17,20 @@
     --font-family-accent: "Roboto Slab", sans-serif;
 
     --transition-duration: 0.3s;
+
+    @media (max-width: 1023px) {
+        --section-padding: 50px;
+    }
+
+    @media (max-width: 768px) {
+        --section-padding: 40px;
+    }
 }
 
 $container-width: var(--container-width);
 $container-padding-x: var(--container-padding-x);
+
+$section-padding: var(--section-padding);
 
 $color-light: var(--color-light);
 $color-dark: var(--color-dark);

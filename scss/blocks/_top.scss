@@ -1,0 +1,67 @@
+.top {
+    background-image: url(../images/top-bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        column-gap: 40px;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+        }
+    }
+
+    &__content {
+        max-width: 420px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 23px;
+
+        @include tablet {
+            row-gap: 15px
+        }
+
+        @include mobile {
+            row-gap: 10px
+        }
+    }
+
+    &__title {
+        @include fluid-text(30, 38);
+
+        line-height: 1.16;
+        color: $color-light;
+        font-weight: 400;
+    }
+
+    &__text {
+        @include fluid-text(18, 20);
+
+        color: $color-light;
+        line-height: 1.3;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        column-gap: 14px;
+    }
+
+    &__image {
+        width: 100%;
+
+        @include tablet {
+            max-width: 400px;
+        }
+
+        @include mobile {
+            max-width: 420px;
+        }
+    }
+}

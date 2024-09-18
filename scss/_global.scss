@@ -1,4 +1,7 @@
 body {
+    @include fluid-text(14, 16);
+
+    line-height: 1.4;
     font-family: $font-family-base;
     color: $color-dark;
 }

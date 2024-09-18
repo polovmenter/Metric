@@ -1,0 +1,22 @@
+.button {
+    display: block;
+    font-family: $font-family-accent;
+    font-size: 16px;
+    line-height: 1.4;
+    color: $color-light;
+    padding: 13px 23px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    background-color: $color-dark-alt;
+
+    @include hover {
+        background-color: transparent;
+        color: $color-dark-alt;
+        border-color: currentColor;
+    }
+
+    &--transparent {
+        background-color: transparent;
+        color: $color-dark-alt;
+    }
+}
