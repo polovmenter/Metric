@@ -1,0 +1,34 @@
+.partners {
+    padding-block: 28px 38px;
+    background-color: $color-green;
+
+    @include mobile {
+        padding-bottom: 25px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+
+        @include mobile {
+            row-gap: 10px;
+        }
+    }
+
+    &__title {
+        font-size: 15px;
+        line-height: 1.4;
+        font-weight: 400;
+        color: $color-light;
+        text-align: center;
+        opacity: 0.31;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 37px;
+        flex-wrap: wrap;
+    }
+}
