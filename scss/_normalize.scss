@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: none;
 }
 
 ul {
@@ -18,7 +19,6 @@ button {
     font-weight: inherit;
     line-height: inherit;
     color: inherit;
-    border: none;
     cursor: pointer;
 }
 
@@ -26,3 +26,6 @@ img {
     display: block;
     height: auto;
 }
+
+svg *[fill] { fill: currentColor }
+svg *[stroke] { stroke: currentColor }

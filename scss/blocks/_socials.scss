@@ -1,0 +1,18 @@
+.socials {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    
+    &__link {
+        color: $color-light;
+        
+        @include hover {
+            color: $color-blue-dark;
+        }
+        
+        & svg {
+            display: block;
+        }
+
+    }
+}

@@ -1,0 +1,108 @@
+.footer {
+    color: $color-gray;
+
+    &__top {
+        padding-block: 40px;
+        background-color: #2B2C2E;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        column-gap: 20px;
+        row-gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    &__content {
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+
+        @include mobile-s {
+            margin-right: 0;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+
+        &-inner {
+            display: flex;
+        }
+
+        &-input {
+            background-color: $color-light;
+            padding: 10px;
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+            max-width: 193px;
+            width: 100%;
+
+            &::placeholder {
+                @include fluid-text(14, 16);
+
+                line-height: 1.4;
+                font-family: $font-family-base;
+                color: $color-gray;
+            }
+        }
+
+        &-button {
+            font-size: 15px;
+            color: $color-light;
+            padding: 10px 15px;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            background-color: #5F6166;
+            text-transform: uppercase;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 10px;
+        max-width: 140px;
+        width: 100%;
+
+        &-title {
+            font-family: $font-family-secondary;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 1.4;
+            color: #E4E8EB;
+            text-transform: uppercase;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        &-link {
+            font-size: 15px;
+            color: $color-gray;
+
+            @include hover {
+                color: $color-light;
+            }
+        }
+    }
+
+    &__bottom {
+        padding-block: 20px;
+        background-color: #1C1D1F;
+    }
+
+    &__copyright {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+}
