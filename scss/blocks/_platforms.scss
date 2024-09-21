@@ -1,0 +1,49 @@
+.platforms {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+
+    @include mobile {
+        row-gap: 25px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: start;
+        column-gap: 20px;
+        
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px;
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
+            @include mobile {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        &-image {
+            width: 100%;
+            max-width: 460px;
+
+            @include tablet {
+                max-width: 400px;
+            }
+        }
+
+        &-content {
+            padding-top: 30px;
+            max-width: 390px;
+            
+            @include mobile {
+                padding-top: 0;
+            }
+        }
+    }
+}

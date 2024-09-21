@@ -1,0 +1,21 @@
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 20px;
+    
+    @include mobile {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    &__item {
+        max-width: 220px;
+        
+        @include mobile {
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

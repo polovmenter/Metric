@@ -1,0 +1,38 @@
+.features {
+    
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 70px;
+
+        @include tablet {
+            row-gap: 40px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        &-icon {
+            margin-bottom: 11px;
+
+            @include tablet {
+                margin-bottom: 5px;
+            }
+        }
+
+        &-title {
+            @include fluid-text(18, 22);
+
+            line-height: 1.36;
+            font-weight: 400;
+            margin-bottom: 17px;
+
+            @include tablet {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
