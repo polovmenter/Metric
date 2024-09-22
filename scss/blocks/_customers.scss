@@ -1,0 +1,18 @@
+.customers {
+    padding-block: 55px;
+    background-color: $color-blue-dark;
+    color: $color-light;
+
+    @include mobile {
+        padding-block: 40px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 20px;
+        row-gap: 15px;
+        flex-wrap: wrap;
+    }
+}

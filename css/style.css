@@ -519,6 +519,26 @@ textarea {
   font-size: clamp(12px, 1.0416666667vw, 15px);
 }
 
+.customers {
+  padding-block: 55px;
+  background-color: var(--color-blue-dark);
+  color: var(--color-light);
+}
+@media (max-width: 768px) {
+  .customers {
+    padding-block: 40px;
+  }
+}
+.customers__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+}
+
 .footer {
   color: var(--color-gray);
 }
