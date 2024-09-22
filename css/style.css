@@ -474,6 +474,51 @@ textarea {
   }
 }
 
+.testimonials__inner {
+  max-width: 780px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+}
+@media (max-width: 1200px) {
+  .testimonials__inner {
+    row-gap: 20px;
+  }
+}
+@media (max-width: 1025px) {
+  .testimonials__inner {
+    row-gap: 15px;
+    max-width: 580px;
+  }
+}
+.testimonials__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 22px;
+}
+@media (max-width: 1025px) {
+  .testimonials__content {
+    row-gap: 18px;
+  }
+}
+.testimonials__text {
+  font-size: clamp(16px, 1.7361111111vw, 25px);
+  font-family: var(--font-family-accent);
+  line-height: 1.24;
+  text-align: center;
+}
+.testimonials__author {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 12px;
+}
+.testimonials__author-post {
+  font-size: clamp(12px, 1.0416666667vw, 15px);
+}
+
 .footer {
   color: var(--color-gray);
 }
