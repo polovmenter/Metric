@@ -8,6 +8,7 @@
     border-radius: 3px;
     border: 1px solid transparent;
     background-color: $color-dark-alt;
+    text-align: center;
 
     @include hover {
         background-color: transparent;
