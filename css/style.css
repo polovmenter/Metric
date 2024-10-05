@@ -173,10 +173,32 @@ textarea {
        column-gap: 14px;
 }
 .menu__link {
+  position: relative;
   font-size: 15px;
   line-height: 1.5;
   color: #222;
   padding: 10px;
+}
+@media (hover: hover) {
+  .menu__link:hover::after {
+    transform: scale(1);
+  }
+}
+@media (hover: none) {
+  .menu__link:active::after {
+    transform: scale(1);
+  }
+}
+.menu__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform var(--transition-duration);
 }
 
 .button {
@@ -345,6 +367,103 @@ textarea {
   }
 }
 
+.slide-down {
+  opacity: 0;
+  transform: translateY(50%);
+}
+@media (max-width: 768px) {
+  .slide-down {
+    animation-delay: 0s !important;
+  }
+}
+.slide-down.scrolled {
+  animation: slide-down 0.3s linear both;
+}
+.slide-down:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.slide-down:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.slide-down:nth-child(4) {
+  animation-delay: 0.9s;
+}
+.slide-down:nth-child(5) {
+  animation-delay: 1.2s;
+}
+.slide-down:nth-child(6) {
+  animation-delay: 1.5s;
+}
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(-50%);
+}
+.slide-left.scrolled {
+  animation: slide-left 0.6s linear both;
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(50%);
+}
+.slide-right.scrolled {
+  animation: slide-right 0.6s linear both;
+}
+
+.scroll-appear {
+  opacity: 0;
+}
+@media (max-width: 768px) {
+  .scroll-appear {
+    animation-delay: 0s !important;
+  }
+}
+.scroll-appear.scrolled {
+  animation: appear 0.6s ease-in both;
+}
+.scroll-appear:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .top {
   background-image: url(../images/top-bg.png);
   background-repeat: no-repeat;
@@ -633,6 +752,7 @@ textarea {
 }
 .pricing__text {
   text-align: center;
+  padding-inline: 15px;
 }
 
 .testimonials__inner {
